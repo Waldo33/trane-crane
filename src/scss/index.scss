@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.model, .container {
+    width: 100%; 
+    height: 100vh;
+}
+
+.readme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100wh;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    button {
+        font-weight: 500;
+        width: 160px;
+        height: 46px;
+        border-radius: 4.8px;
+        margin: 0 auto 20%;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background: transparent;
+            color: #6C757D;
+            border-color: #6C757D;
+        }
+    }
+}
+
+.modal-body img {
+    width: 100%
+}
