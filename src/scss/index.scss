@@ -39,6 +39,12 @@ body {
     }
 }
 
-.modal-body img {
-    width: 100%
+.modal-body {
+    img {
+        width: 100%
+    }
+    ul {
+        list-style: upper-roman;
+    }
 }
+

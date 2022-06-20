@@ -42,3 +42,6 @@ body {
 .modal-body img {
   width: 100%;
 }
+.modal-body ul {
+  list-style: upper-roman;
+}
