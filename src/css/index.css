@@ -40,8 +40,11 @@ body {
 }
 
 .modal-body img {
-  width: 100%;
+  max-width: 100%;
 }
 .modal-body ul {
   list-style: upper-roman;
+}
+.modal-body p {
+  text-align: justify;
 }
