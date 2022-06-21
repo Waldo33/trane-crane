@@ -14,7 +14,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #E2DFE1;
+  position: absolute;
   z-index: 2;
   padding: 0px;
 }
