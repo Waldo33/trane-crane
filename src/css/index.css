@@ -32,12 +32,12 @@ header .container-fluid nav {
 header .container-fluid nav .navbar-toggler {
   display: none;
 }
-header .container-fluid nav .title {
-  display: none;
-}
 @media screen and (max-width: 1000px) {
   header .container-fluid nav {
     border-radius: 0;
+  }
+  header .container-fluid nav .navbar-toggler {
+    display: none;
   }
 }
 @media screen and (max-width: 485px) {
