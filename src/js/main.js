@@ -1,7 +1,7 @@
-import * as THREE from 'three';
+        import * as THREE from 'three';
         import { OrbitControls } from 'OrbitControls';
         import { GLTFLoader } from 'GLTFLoader';
-        // import { RectAreaLightHelper } from 'RectAreaLightHelper'
+        import { RectAreaLightHelper } from 'RectAreaLightHelper';
         import { RectAreaLightUniformsLib } from 'RectAreaLightUniformsLib';
         function init() {
             let container = document.querySelector('.model');
@@ -12,7 +12,7 @@ import * as THREE from 'three';
 
             //Camera
             const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 3000);
-            camera.position.set(100, 70, 160)
+            camera.position.set(150, 70, 160)
 
             //render
             const renderer = new THREE.WebGLRenderer({antialias: true})
@@ -34,7 +34,7 @@ import * as THREE from 'three';
             // Model
             {
                 const loader = new GLTFLoader();
-                loader.load('./assets/3d/scene.gltf', gltf => {
+                loader.load('./src/assets/3d/scene.gltf', gltf => {
                 scene.add(gltf.scene);
                 }, 
                     function (error) {
@@ -78,7 +78,7 @@ import * as THREE from 'three';
             
             //OrbitControls
             const controls = new OrbitControls(camera, renderer.domElement);
-            controls.autoRotate = true;
+            // controls.autoRotate = true;
             controls.autoRotateSpeed = 5;
             controls.enableDamping = true;
 

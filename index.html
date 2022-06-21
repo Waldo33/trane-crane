@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train crane</title>
+    <title>Поездной кран машиниста</title>
+    <link rel="icon" type="image/png" href="./src/assets/icons/favicon.svg"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/index.min.css">
+    <script src="https://kit.fontawesome.com/f45017c9df.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="https://vtgt.ru" target="_blank"><i class="fa-solid fa-train"></i></a>
+                <a class="nav-link" href="./index.html">Поездной кран машиниста</a>
+                <a class="nav-link" href="./relay.html">Локомотивное реле</a>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                      <a class="nav-link d-bl" href="./index.html">Поездной кран машиниста</a>
+                      <a class="nav-link d-bl" href="./relay.html">Локомотивное реле</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
     <div class="model">
     </div>
+    <div class="readme">
+        <button type="button" data-toggle="modal" data-target="#myModal" class="btn-dark shadow-none">читать</button>
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-2 offset-5">
-                <div class="readme">
-                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn-dark">читать</button>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div id="myModal" class="modal fade" id="exampleModalLong" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -49,7 +64,7 @@
                                 <li>При экстренном торможении кран должен обеспечивать прямое сообщение тормозной магистрали с атмосферой.</li>
                             </ol>
                             Поездной кран машиниста усл.№395М имеет 7 положений ручки:       
-                            <ul>
+                            <ul class="roman">
                                 <li>положение - зарядка и отпуск.</li>
                                 <li>положение - поездное, поддержание нормального зарядного давления.</li>
                                 <li>положение - перекрыша без питания тормозной магистрали.</li>
@@ -60,23 +75,23 @@
                             </ul>
                             </p>
                             <p>Поездной кран состоит из пяти пневматических частей: корпуса нижней части 1, редуктора зарядного давления 2, средней части 3, крышки 4, стабилизатора темпа ликвидации сверхзарядного давления 8 и электрического контроллера 6.</p>
-                            <img src="./assets/images/1.png" alt="Поездной кран машиниста усл.№395М">
+                            <img src="./src/assets/images/1.png" alt="Поездной кран машиниста усл.№395М">
                             <p>В верхней части крана имеется золотник 6, соединенный стержнем 3 с ручкой 2 крана. Ручка крана закреплена контргайкой 1 и имеет на крышке 7 верхней части семь фиксированных положений. Стержень уплотнен в верхней части крышки манжетой 4.</p>
                             <p>В нижней части корпуса 14 находятся пустотелый впускной клапан 16 и уравнительный поршень 11, хвостовик которого образует выпускной клапан. Уравнительный поршень уплотнен резиновой манжетой 13 и латунным кольцом 12. Впускной клапан прижимается к седлу 15 пружиной 17. Хвостовик впускного клапана уплотнен резиновой манжетой 18, установленной в цоколе 19.</p>
-                            <img src="./assets/images/2.png" alt="Верхняя, средняя и нижняя части поездного крана машиниста усл.№395М">
+                            <img src="./src/assets/images/2.png" alt="Верхняя, средняя и нижняя части поездного крана машиниста усл.№395М">
                             <p>В нижнюю часть корпуса ввернуты четыре шпильки, которые скрепляют все три части крана через резиновые прокладки 8 и 10, а также сетчатый фильтр 21.</p>
                             <p>Редуктор зарядного давления и стабилизатор темпа ликвидации сверхзарядного давления крепятся к корпусу нижней части крана.</p>
-                            <img src="./assets/images/3.png" alt="Редуктор">
+                            <img src="./src/assets/images/3.png" alt="Редуктор">
                             <p>Редуктор предназначен для автоматического поддержания определенного зарядного давления в уравнительном объеме крана при поездном положении ручки. Редуктор состоит из двух частей: верхней — крышки 26 и нижней — корпуса 30, между которыми зажата металлическая диафрагма 28. В верхней части корпуса расположено седло 27 питательного клапана 25, пружина 24 и заглушка 23. В нижнюю часть ввернут регулировочный стакан 32, с помощью которого изменяется усилие регулировочной пружины 31 на опорную шайбу 29.</p>
                             <p>Стабилизатор предназначен для автоматической ликвидации сверхзарядного давления из уравнительного объема крана постоянным темпом при поездном положении ручки. Стабилизатор состоит из крышки 33 с калиброванным отверстием диаметром 0,45 мм, возбудительного клапана 35 с пружиной 34, металлической диафрагмы 36, пластмассовой упорной шайбы 37, корпуса 38, регулировочной пружины 39 и регулировочного стакана 40 с контргайкой.</p>
-                            <img src="./assets/images/4.png" alt="Стабилизатор">
+                            <img src="./src/assets/images/4.png" alt="Стабилизатор">
                             <p>Особенностью поездного крана машиниста усл.№395М всех модификаций является наличие контроллера, который в кранах № 395-000, 395-000-4 и 395-000-5 служит для одновременного управления пневматическими и электропневматическими тормозами. В кране усл.№395-000-4 контроллер помимо управления электропневматическими тормозами служит для выключения тяговых двигателей и включения пневматической песочницы при экстренном торможении, а в кране № 395-000-3 — только для выключения тяговых двигателей и включения песочницы при экстренном торможении.</p>
                             <p>Конструкции контроллеров поездных кранов машиниста усл.№395 отличаются числом микропереключателей, их расположением, числом проводов и типом штепсельного разъема. На кранах № 395-000-3 наружный диаметр контроллера меньше, чем на кранах других модификаций.</p>
                             <p>Краны машиниста № 395-000 с двумя микропереключателями и № 395-000-4 с тремя применяются на пассажирских локомотивах. Кран машиниста № 395-000-5 с двумя микропереключателями, включенными по схеме, отличной от схемы крана № 395-000, применяется на электро- и дизель-поездах, а кран машиниста № 395-000-3 с одним микропереключателем - на грузовых локомотивах.</p>
-                            <img src="./assets/images/5.png" alt="Контроллер поездного крана машиниста усл.№395М">
+                            <img src="./src/assets/images/5.png" alt="Контроллер поездного крана машиниста усл.№395М">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">закрыть</button>
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">закрыть</button>
                     </div>
                     </div>
                 </div>
@@ -96,10 +111,10 @@
         }
     </script>
 
-    <script src="./js/main.js" type="module"></script>
+    <script src="./src/js/main.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./src/js/modal.js"></script>
 </body>
 </html>
