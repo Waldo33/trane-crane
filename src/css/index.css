@@ -71,7 +71,7 @@ header .container-fluid nav {
 .modal-body img {
   max-width: 100%;
 }
-.modal-body ul {
+.modal-body .roman {
   list-style: upper-roman;
 }
 .modal-body p {
