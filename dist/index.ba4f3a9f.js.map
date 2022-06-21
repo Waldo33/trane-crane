@@ -1,1 +1,0 @@
-{"mappings":"AAAA,CAAC,CAAC,UAAU,CAAC,CAAC,KAAK,CAAC,OAAO,CAAC","sources":["src/js/modal.js"],"sourcesContent":["$('#myModal').modal(options)"],"names":[],"version":3,"file":"index.ba4f3a9f.js.map","sourceRoot":"/__parcel_source_root/"}
