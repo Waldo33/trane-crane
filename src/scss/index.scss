@@ -27,17 +27,41 @@ header {
                 margin: 0 auto;
                 padding: 8px 8px 8px 24px;
                 border-radius: 0px 0px 4.8px 4.8px;
+                .navbar-toggler {
+                    display: none;
+                }
+                .title {
+                    display: none;
+                }
             }
         @media screen and (max-width: 1000px) {
             nav {
                 border-radius: 0;
             }
         }
+        @media screen and (max-width: 485px) {
+            nav {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 0;
+                .nav-link {
+                    display: none;
+                }
+                .navbar-toggler {
+                    display: block;
+                }
+                .collapse {
+                    .d-bl {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
 
 .model, .container {
-    width: 100%; 
+    max-width: 100%; 
     height: 100vh;
 }
 
@@ -72,6 +96,8 @@ header {
             text-align: center;
         }
         img {
+            display: block;
+            margin: 0 auto;
             max-width: 100%;
         }
         .roman {

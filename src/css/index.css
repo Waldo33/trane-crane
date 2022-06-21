@@ -29,14 +29,36 @@ header .container-fluid nav {
   padding: 8px 8px 8px 24px;
   border-radius: 0px 0px 4.8px 4.8px;
 }
+header .container-fluid nav .navbar-toggler {
+  display: none;
+}
+header .container-fluid nav .title {
+  display: none;
+}
 @media screen and (max-width: 1000px) {
   header .container-fluid nav {
     border-radius: 0;
   }
 }
+@media screen and (max-width: 485px) {
+  header .container-fluid nav {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+  }
+  header .container-fluid nav .nav-link {
+    display: none;
+  }
+  header .container-fluid nav .navbar-toggler {
+    display: block;
+  }
+  header .container-fluid nav .collapse .d-bl {
+    display: block;
+  }
+}
 
 .model, .container {
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
 }
 
@@ -69,6 +91,8 @@ header .container-fluid nav {
   text-align: center;
 }
 .modal-body img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
 }
 .modal-body .roman {
